@@ -47,9 +47,7 @@ def main():
     downloads_folder = os.path.join(current_dir,r'downloads')
     if not os.path.exists(downloads_folder):
         os.mkdir(downloads_folder)
-        download_files(downloads_folder)
-    else:
-        download_files(downloads_folder)
+    download_files(downloads_folder)
     unzip_files(downloads_folder)
 
 if __name__ == '__main__':
